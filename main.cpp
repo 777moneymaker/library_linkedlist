@@ -1,7 +1,7 @@
 ﻿#include<iostream>
 #include<cstdio>
 #include<cstdlib>
-#include<string>
+#include<string> //bunch of headers
 #include <fstream>
 #include"functions.h"
 #include <locale.h>
@@ -12,13 +12,13 @@ int main()
 	setlocale(LC_ALL, "polish");
 	cout << "Wstępne informacje!: \nksiążka wypożyczona ma status \"Wypożyczona\", a książka dostępna ma status \"Wolna\".\n"
 		"Każda nowo dodana książka ma status \"Wolna\".\nTytuły należy wpisywać bez spacji"
-		"\nŻyczę miłego użytkowania\n\n" << endl;
+		"\nŻyczę miłego użytkowania\n\n" << endl; //some info about the program
 
 	char choice;
 	while (1) {
 		cout << "1) Dodaj nową książkę\n"
 			"2) Usuń książkę\n"
-			"3) Edytuj dane książki\n"
+			"3) Edytuj dane książki\n" //MENU
 			"4) Zmień status książki.\n"
 			"5) Wyszukaj książkę\n"
 			"6) Wyświetl bazę po tytułach\n"
