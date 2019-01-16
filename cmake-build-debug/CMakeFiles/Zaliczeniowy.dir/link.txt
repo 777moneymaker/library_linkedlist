@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/Zaliczeniowy.dir/main.cpp.o  -o Zaliczeniowy 
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/Zaliczeniowy.dir/main.cpp.o  -o Zaliczeniowy 

@@ -1,6 +1,6 @@
 // Created by Milosz Chodkowski
 
-﻿#include<iostream>
+#include<iostream>
 #include<cstdio>
 #include<cstdlib>
 #include<string> //bunch of headers

@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/milosz/Desktop/Projekty PP/projekt/functions.h
+
+/Users/milosz/Desktop/Projekty PP/projekt/main.cpp
+iostream
+-
+cstdio
+-
+cstdlib
+-
+string
+-
+fstream
+-
+functions.h
+/Users/milosz/Desktop/Projekty PP/projekt/functions.h
+locale.h
+-
+

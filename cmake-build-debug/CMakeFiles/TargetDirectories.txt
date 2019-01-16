@@ -1,3 +1,3 @@
-/home/moneymaker/Desktop/Clion Project/Zaliczeniowy/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/moneymaker/Desktop/Clion Project/Zaliczeniowy/cmake-build-debug/CMakeFiles/Zaliczeniowy.dir
-/home/moneymaker/Desktop/Clion Project/Zaliczeniowy/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/milosz/Desktop/Projekty PP/projekt/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/milosz/Desktop/Projekty PP/projekt/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/milosz/Desktop/Projekty PP/projekt/cmake-build-debug/CMakeFiles/Zaliczeniowy.dir
