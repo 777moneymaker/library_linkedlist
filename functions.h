@@ -72,36 +72,34 @@ void deleteNode(struct Book* del) { // procedure for deleting node
 
 void deleteItemById(int ID) { //deleting by comparing node's ID's
 
-	if (head == NULL || ID < 0) {
-		cout << endl;
-		cout << "Nie mozna usunac!" << endl;
-		cout << endl;
-		return;
-	}
+    if (head == NULL || ID < 0) {
+        cout << endl;
+        cout << "Nie mozna usunac!" << endl;
+        cout << endl;
+        return;
+    }
 
-	struct Book* temp = head;
-	int count = 0;
-	while (temp != NULL) {
-		if (temp->ID == ID) {
-			count++;
-			break;
-		}
-		temp = temp->next;
-	}
-	if (count == 0) {
-		cout << endl;
-		cout << "Nie ma ksiazki o podanym indeksie. Sprawdz czy wybrales dobry indeks!" << endl;
-		cout << endl;
-		return;
-	}
-	cout << endl;
-	cout << "Usunieto!" << endl;
-	cout << endl;
-	deleteNode(temp); // function inside function
-	if (identificator == 1)
-		return;
-	identificator--;
-
+    struct Book *temp = head;
+    int count = 0;
+    while (temp != NULL) {
+        if (temp->ID == ID) {
+            count++;
+            break;
+        }
+        temp = temp->next;
+    }
+    if (count == 0) {
+        cout << endl;
+        cout << "Nie ma ksiazki o podanym indeksie. Sprawdz czy wybrales dobry indeks!" << endl;
+        cout << endl;
+        return;
+    }
+    cout << endl;
+    cout << "Usunieto!" << endl;
+    cout << endl;
+    deleteNode(temp); // function inside function
+    if (identificator == 1)
+        return;
 }
 
 void deleteItemByTitle(string title) { //deleting nodes by string(title) compare
