@@ -292,7 +292,6 @@ void changeBookStatus(string title) { //book status change by string  compare
 }
 
 
-
 void printList() { //function used when testing the program
 	if (head == NULL) {
 		cout << "\nBaza pusta!\n" << endl;
@@ -414,7 +413,7 @@ void saveToFile(string filename) {
 	myfile.open(filename.c_str());
 	myfile.clear();
 	if (myfile.fail()) {
-		cout << "Bladd przy zapisywaniu do pliku." << endl;
+		cout << "Blad przy zapisywaniu do pliku." << endl;
 		return;
 	}
 	while (temp) {
@@ -499,5 +498,74 @@ void readFromFile(string filename) {
 	}
 	myfile.close();
 	cout << "Pomyslnie wczytano z pliku." << endl;
+}
+
+int areMoreBooks(string title) {
+    if (head == NULL) {
+        return 0;
+    }
+        struct Book *temp;
+        temp = head;
+        int count = 0;
+        while (temp) {
+            if (!(title.compare(temp->bookTitle))) {
+                count++;
+            }
+            temp = temp->next;
+        }
+        if (count > 1)
+            return 1;
+        else
+            return 0;
+    }
+
+void deleteSpecificBook(int id){
+    struct Book* temp = head;
+    while (temp) {
+        if (id == temp->ID) {
+            deleteNode(temp);
+            cout << endl;
+            cout << "Usunieto!" << endl;
+            cout << endl;
+            return;
+        }
+        temp = temp->next;
+    }
+}
+void printNodeByTitle(string title){
+    struct Book* temp = head;
+    while (temp) {
+        if (!(title.compare(temp->bookTitle))) {
+            cout << endl;
+            cout <<"ID: "<<temp->ID<< endl;
+            cout<< "Tytul: "<<temp->bookTitle<<endl;
+            cout<<"Autor: "<<temp->authorName<<" "<<temp->authorSurname<<endl;
+            cout << endl;
+            cout<<endl;
+        }
+        temp = temp->next;
+    }
+}
+int isLoanTitle(string title){
+        struct Book* temp = head;
+        while (temp) {
+            if (!(title.compare(temp->bookTitle))) {
+                if(!(temp->loanStatus).compare("Wypozyczona"));
+                return 1;
+            }
+            temp = temp->next;
+        }
+        return 0;
+    }
+    int isLoanId(int ID){
+        struct Book* temp = head;
+        while (temp) {
+            if (ID==temp->ID) {
+                if(!(temp->loanStatus).compare("Wypozyczona"));
+                return 1;
+            }
+            temp = temp->next;
+        }
+        return 0;
 }
 #endif //PROJEKT_11_01_0219_FUNCTIONS_H

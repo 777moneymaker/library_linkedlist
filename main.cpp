@@ -1,5 +1,7 @@
 // Created by Milosz Chodkowski
 
+//1 i 3
+
 #include<iostream>
 #include<cstdio>
 #include<cstdlib>
@@ -16,7 +18,7 @@ int main()
 		"Każda nowo dodana książka ma status \"Wolna\".\nTytuły należy wpisywać bez spacji"
 		"\nŻyczę miłego użytkowania\n\n" << endl; //some info about the program
 
-	char choice;
+	unsigned char choice;
 	while (1) {
 		cout << "1) Dodaj nową książkę\n"
 			"2) Usuń książkę\n"
@@ -31,9 +33,12 @@ int main()
 		cout << endl;
 		cout << "Wybierz opcję: ";
 		cout << endl;
-		cin >> choice;
-		switch (choice) {
+		cin>>choice;
+		switch(choice) {
 		NEWBOOK: case '1': {
+			if(choice != '1'){
+				return 0;
+			}
 			string bookTitle, authorsName, authorsSurname, category;
 			cout << "Podaj tytuł książki, dane autora, oraz kategorię: " << endl;
 			cout << "Tytuł: ";
@@ -77,6 +82,10 @@ int main()
 				int id;
 				cout << "Wprowadź ID książki którą chcesz usunąć: ";
 				cin >> id;
+				if(isLoanId(id)){
+					cout<<"Książka jest wypożyczona!Nie mozna usunąć"<<endl;
+					break;
+				}
 				cout << endl;
 				deleteItemById(id);
 			}
@@ -85,9 +94,22 @@ int main()
 				cout << "Wprowadź tytuł książki którą chcesz usunąć: ";
 				cin >> title;
 				cout << endl;
-				deleteItemByTitle(title);
+				if(isLoanTitle(title)){
+					cout<<"Książka jest wypożyczona! Nie można usunąć"<<endl;
+					break;
+				}
+				if(areMoreBooks(title)) {
+					printNodeByTitle(title);
+					int id;
+					cout << "Podaj Id ksiazki ktora chcesz usunac: " << endl;
+					cin >> id;
+					deleteSpecificBook(id);
+					break;
+				}else {
+					deleteItemByTitle(title);
+					break;
+				}
 			}
-			break;
 		}
 		case '3': {
 			string title;
@@ -146,6 +168,9 @@ int main()
 		}
 		case 'X': {
 			return 0;
+		}
+		case'z':{
+			printList();
 		}
 		default: {
 			cout << "Wybrałeś złą opcję! Dostępna lista opcji jest wyświetlana po każdej zakończonej operacji." << endl;
