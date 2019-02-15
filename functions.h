@@ -550,8 +550,8 @@ int isLoanTitle(string title){
         struct Book* temp = head;
         while (temp) {
             if (!(title.compare(temp->bookTitle))) {
-                if(!(temp->loanStatus).compare("Wypozyczona"));
-                return 1;
+                if(!(temp->loanStatus).compare("Wypozyczona"))
+                   return 1;
             }
             temp = temp->next;
         }
@@ -561,8 +561,8 @@ int isLoanTitle(string title){
         struct Book* temp = head;
         while (temp) {
             if (ID==temp->ID) {
-                if(!(temp->loanStatus).compare("Wypozyczona"));
-                return 1;
+                if(!(temp->loanStatus).compare("Wypozyczona"))
+                   return 1;
             }
             temp = temp->next;
         }
