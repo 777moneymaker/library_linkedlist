@@ -103,9 +103,9 @@
       <change beforePath="$PROJECT_DIR$/../Projekt 11.01.0219/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Projekt 11.01.0219/functions.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Projekt 11.01.0219/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Zaliczeniowy.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Zaliczeniowy.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Zaliczeniowy" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Zaliczeniowy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/books.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/books.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions.h" beforeDir="false" afterPath="$PROJECT_DIR$/functions.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -126,7 +126,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
+            <state relative-caret-position="265">
               <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
             </state>
           </provider>
@@ -135,15 +135,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/functions.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="386" lean-forward="true" selection-start-line="386" selection-end-line="386" />
-              <folding>
-                <element signature="e#617#1372#0" />
-                <element signature="e#1374#1695#0" />
-                <element signature="e#1697#2448#0" />
-                <element signature="e#2852#5221#0" />
-                <element signature="e#5223#7977#0" />
-              </folding>
+            <state relative-caret-position="150">
+              <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -157,8 +150,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/cmake-build-debug/books.txt" />
-        <option value="$PROJECT_DIR$/functions.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/functions.h" />
       </list>
     </option>
   </component>
@@ -174,7 +167,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -186,6 +178,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -231,17 +224,17 @@
       <workItem from="1548786206448" duration="31000" />
       <workItem from="1548786255951" duration="91000" />
       <workItem from="1549092129695" duration="12000" />
+      <workItem from="1550258513558" duration="172000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6290000" />
+    <option name="totallyTimeSpent" value="6462000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="27" width="1400" height="860" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2790869" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2827688" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -279,22 +272,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
+        <state relative-caret-position="265">
           <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/functions.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="386" lean-forward="true" selection-start-line="386" selection-end-line="386" />
-          <folding>
-            <element signature="e#617#1372#0" />
-            <element signature="e#1374#1695#0" />
-            <element signature="e#1697#2448#0" />
-            <element signature="e#2852#5221#0" />
-            <element signature="e#5223#7977#0" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
         </state>
       </provider>
     </entry>
