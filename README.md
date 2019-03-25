@@ -2,10 +2,12 @@
 
 Simple library database with doubly linked list.
 
-### Reason for making this project 
+Info
+-----
 
 Simple project for Programming classes.
 
-### Authors
+Authors
+-----
 
 * **Milosz Chodkowski** [777moneymaker](https://github.com/777moneymaker)
